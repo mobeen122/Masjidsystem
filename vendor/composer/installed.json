@@ -1,700 +1,37 @@
 [
     {
-        "name": "ovr/phalcon-pretty-exceptions",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "name": "swiftmailer/swiftmailer",
+        "version": "v5.4.8",
+        "version_normalized": "5.4.8.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/ovr/pretty-exceptions.git",
-            "reference": "92e551ae0111a15a4cac54a48cdb488a4eb5c49c"
+            "url": "https://github.com/swiftmailer/swiftmailer.git",
+            "reference": "9a06dc570a0367850280eefd3f1dc2da45aef517"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ovr/pretty-exceptions/zipball/92e551ae0111a15a4cac54a48cdb488a4eb5c49c",
-            "reference": "92e551ae0111a15a4cac54a48cdb488a4eb5c49c",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3"
-        },
-        "time": "2016-06-14T15:05:10+00:00",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Phalcon\\Utils\\": "Library/Phalcon/Utils"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Contributors",
-                "homepage": "https://github.com/phalcon/pretty-exceptions/graphs/contributors"
-            }
-        ],
-        "description": "Beauty-exceptions plugin for Phalcon"
-    },
-    {
-        "name": "ovr/phalcony",
-        "version": "0.2.7",
-        "version_normalized": "0.2.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ovr/phalcony.git",
-            "reference": "01e00d78b02546561d8986f94fd5cf3b1750d08f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ovr/phalcony/zipball/01e00d78b02546561d8986f94fd5cf3b1750d08f",
-            "reference": "01e00d78b02546561d8986f94fd5cf3b1750d08f",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "4.0.*@dev",
-            "satooshi/php-coveralls": "0.6.1",
-            "squizlabs/php_codesniffer": "1.5.2"
-        },
-        "time": "2016-06-14T15:07:10+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "0.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Phalcony\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Patsura Dmitry",
-                "email": "zaets28rus@gmail.com"
-            }
-        ],
-        "description": "Library for expansion the base functional of Phalcon framework.",
-        "keywords": [
-            "framework",
-            "phalcon"
-        ]
-    },
-    {
-        "name": "squizlabs/php_codesniffer",
-        "version": "2.2.0",
-        "version_normalized": "2.2.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-            "reference": "b301c98f19414d836fdaa678648745fcca5aeb4f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/b301c98f19414d836fdaa678648745fcca5aeb4f",
-            "reference": "b301c98f19414d836fdaa678648745fcca5aeb4f",
-            "shasum": ""
-        },
-        "require": {
-            "ext-tokenizer": "*",
-            "php": ">=5.1.2"
-        },
-        "time": "2015-01-21T22:44:05+00:00",
-        "bin": [
-            "scripts/phpcs",
-            "scripts/phpcbf"
-        ],
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "CodeSniffer.php",
-                "CodeSniffer/CLI.php",
-                "CodeSniffer/Exception.php",
-                "CodeSniffer/File.php",
-                "CodeSniffer/Fixer.php",
-                "CodeSniffer/Report.php",
-                "CodeSniffer/Reporting.php",
-                "CodeSniffer/Sniff.php",
-                "CodeSniffer/Tokens.php",
-                "CodeSniffer/Reports/",
-                "CodeSniffer/Tokenizers/",
-                "CodeSniffer/DocGenerators/",
-                "CodeSniffer/Standards/AbstractPatternSniff.php",
-                "CodeSniffer/Standards/AbstractScopeSniff.php",
-                "CodeSniffer/Standards/AbstractVariableSniff.php",
-                "CodeSniffer/Standards/IncorrectPatternException.php",
-                "CodeSniffer/Standards/Generic/Sniffs/",
-                "CodeSniffer/Standards/MySource/Sniffs/",
-                "CodeSniffer/Standards/PEAR/Sniffs/",
-                "CodeSniffer/Standards/PSR1/Sniffs/",
-                "CodeSniffer/Standards/PSR2/Sniffs/",
-                "CodeSniffer/Standards/Squiz/Sniffs/",
-                "CodeSniffer/Standards/Zend/Sniffs/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Greg Sherwood",
-                "role": "lead"
-            }
-        ],
-        "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-        "homepage": "http://www.squizlabs.com/php-codesniffer",
-        "keywords": [
-            "phpcs",
-            "standards"
-        ]
-    },
-    {
-        "name": "phalconeye/framework",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/PhalconEye/framework.git",
-            "reference": "7ed523ad9f3eb33e0bc92ef87e2ae387be8c154d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/PhalconEye/framework/zipball/7ed523ad9f3eb33e0bc92ef87e2ae387be8c154d",
-            "reference": "7ed523ad9f3eb33e0bc92ef87e2ae387be8c154d",
-            "shasum": ""
-        },
-        "time": "2014-10-20T12:44:11+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "0.5-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Engine\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Ivan Vorontsov",
-                "email": "lantian.ivan@gmail.com"
-            }
-        ],
-        "description": "Phalcon Eye Core Framework"
-    },
-    {
-        "name": "socialconnect/common",
-        "version": "0.7.3",
-        "version_normalized": "0.7.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/SocialConnect/common.git",
-            "reference": "338544e5884ce09efa0d9577b87ead4aa9a4ee4e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/SocialConnect/common/zipball/338544e5884ce09efa0d9577b87ead4aa9a4ee4e",
-            "reference": "338544e5884ce09efa0d9577b87ead4aa9a4ee4e",
-            "shasum": ""
-        },
-        "require": {
-            "ext-curl": "*",
-            "ext-json": "*",
-            "php": ">=5.5"
-        },
-        "require-dev": {
-            "doctrine/cache": "~1.5.1|~1.6.0",
-            "guzzlehttp/guzzle": "~5.3|~6.0",
-            "phpunit/phpunit": "~4.2",
-            "squizlabs/php_codesniffer": "~2.3"
-        },
-        "suggest": {
-            "guzzlehttp/guzzle": "Allows to use Http\\Client\\Guzzle, require guzzlehttp/guzzle:~5.3|~6.0."
-        },
-        "time": "2017-02-07T17:08:27+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "SocialConnect\\Common\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Dmitry Patsura",
-                "email": "talk@dmtry.me"
-            }
-        ],
-        "description": "Common component"
-    },
-    {
-        "name": "socialconnect/auth",
-        "version": "0.4.8",
-        "version_normalized": "0.4.8.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/SocialConnect/auth.git",
-            "reference": "24be8577bc5c6cd8d13a1714dc9e5d5849a3fac8"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/SocialConnect/auth/zipball/24be8577bc5c6cd8d13a1714dc9e5d5849a3fac8",
-            "reference": "24be8577bc5c6cd8d13a1714dc9e5d5849a3fac8",
-            "shasum": ""
-        },
-        "require": {
-            "ext-json": "*",
-            "php": ">=5.5",
-            "socialconnect/common": "~0.7.1"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.8.34",
-            "squizlabs/php_codesniffer": "~2.7.1"
-        },
-        "time": "2017-02-05T06:51:42+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "SocialConnect\\Auth\\": "src/",
-                "SocialConnect\\Vk\\": "providers/Vk/",
-                "SocialConnect\\Github\\": "providers/Github/",
-                "SocialConnect\\Google\\": "providers/Google/",
-                "SocialConnect\\Facebook\\": "providers/Facebook/",
-                "SocialConnect\\Twitter\\": "providers/Twitter/",
-                "SocialConnect\\Instagram\\": "providers/Instagram/",
-                "SocialConnect\\Paypal\\": "providers/Paypal/",
-                "SocialConnect\\Slack\\": "providers/Slack/",
-                "SocialConnect\\Twitch\\": "providers/Twitch/",
-                "SocialConnect\\Px500\\": "providers/Px500/",
-                "SocialConnect\\Bitbucket\\": "providers/Bitbucket/",
-                "SocialConnect\\Amazon\\": "providers/Amazon/",
-                "SocialConnect\\Gitlab\\": "providers/Gitlab/",
-                "SocialConnect\\Vimeo\\": "providers/Vimeo/",
-                "SocialConnect\\DigitalOcean\\": "providers/DigitalOcean/",
-                "SocialConnect\\Yandex\\": "providers/Yandex/",
-                "SocialConnect\\MailRu\\": "providers/MailRu/",
-                "SocialConnect\\Odnoklassniki\\": "providers/Odnoklassniki/",
-                "SocialConnect\\Steam\\": "providers/Steam/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Dmitry Patsura",
-                "email": "talk@dmtry.me"
-            }
-        ],
-        "description": "Social Connect Auth Component",
-        "keywords": [
-            "amazon",
-            "auth",
-            "bitbucket",
-            "facebook",
-            "github",
-            "gitlab",
-            "google",
-            "login",
-            "oauth",
-            "slack",
-            "socialconnect",
-            "twitch",
-            "twitter",
-            "vk"
-        ]
-    },
-    {
-        "name": "symfony/process",
-        "version": "v3.2.7",
-        "version_normalized": "3.2.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/process.git",
-            "reference": "57fdaa55827ae14d617550ebe71a820f0a5e2282"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/process/zipball/57fdaa55827ae14d617550ebe71a820f0a5e2282",
-            "reference": "57fdaa55827ae14d617550ebe71a820f0a5e2282",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9"
-        },
-        "time": "2017-03-27T18:07:02+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Process\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Process Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/finder",
-        "version": "v3.2.7",
-        "version_normalized": "3.2.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/finder.git",
-            "reference": "b20900ce5ea164cd9314af52725b0bb5a758217a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/finder/zipball/b20900ce5ea164cd9314af52725b0bb5a758217a",
-            "reference": "b20900ce5ea164cd9314af52725b0bb5a758217a",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9"
-        },
-        "time": "2017-03-20T09:32:19+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Finder\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Finder Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/filesystem",
-        "version": "v3.2.7",
-        "version_normalized": "3.2.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/filesystem.git",
-            "reference": "64421e6479c4a8e60d790fb666bd520992861b66"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/filesystem/zipball/64421e6479c4a8e60d790fb666bd520992861b66",
-            "reference": "64421e6479c4a8e60d790fb666bd520992861b66",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9"
-        },
-        "time": "2017-03-26T15:47:15+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Filesystem\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Filesystem Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "psr/log",
-        "version": "1.0.2",
-        "version_normalized": "1.0.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/php-fig/log.git",
-            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2016-10-10T12:19:37+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Psr\\Log\\": "Psr/Log/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
-            }
-        ],
-        "description": "Common interface for logging libraries",
-        "homepage": "https://github.com/php-fig/log",
-        "keywords": [
-            "log",
-            "psr",
-            "psr-3"
-        ]
-    },
-    {
-        "name": "symfony/debug",
-        "version": "v3.2.7",
-        "version_normalized": "3.2.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/debug.git",
-            "reference": "56f613406446a4a0a031475cfd0a01751de22659"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/debug/zipball/56f613406446a4a0a031475cfd0a01751de22659",
-            "reference": "56f613406446a4a0a031475cfd0a01751de22659",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9",
-            "psr/log": "~1.0"
-        },
-        "conflict": {
-            "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
-        },
-        "require-dev": {
-            "symfony/class-loader": "~2.8|~3.0",
-            "symfony/http-kernel": "~2.8|~3.0"
-        },
-        "time": "2017-03-28T21:38:24+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Debug\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Debug Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/polyfill-mbstring",
-        "version": "v1.3.0",
-        "version_normalized": "1.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/polyfill-mbstring.git",
-            "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
-            "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
+            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/9a06dc570a0367850280eefd3f1dc2da45aef517",
+            "reference": "9a06dc570a0367850280eefd3f1dc2da45aef517",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "suggest": {
-            "ext-mbstring": "For best performance"
-        },
-        "time": "2016-11-14T01:06:16+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.3-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Polyfill\\Mbstring\\": ""
-            },
-            "files": [
-                "bootstrap.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Nicolas Grekas",
-                "email": "p@tchwork.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony polyfill for the Mbstring extension",
-        "homepage": "https://symfony.com",
-        "keywords": [
-            "compatibility",
-            "mbstring",
-            "polyfill",
-            "portable",
-            "shim"
-        ]
-    },
-    {
-        "name": "symfony/console",
-        "version": "v3.2.7",
-        "version_normalized": "3.2.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/console.git",
-            "reference": "c30243cc51f726812be3551316b109a2f5deaf8d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/c30243cc51f726812be3551316b109a2f5deaf8d",
-            "reference": "c30243cc51f726812be3551316b109a2f5deaf8d",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9",
-            "symfony/debug": "~2.8|~3.0",
-            "symfony/polyfill-mbstring": "~1.0"
-        },
         "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/event-dispatcher": "~2.8|~3.0",
-            "symfony/filesystem": "~2.8|~3.0",
-            "symfony/process": "~2.8|~3.0"
+            "mockery/mockery": "~0.9.1",
+            "symfony/phpunit-bridge": "~3.2"
         },
-        "suggest": {
-            "psr/log": "For using the console logger",
-            "symfony/event-dispatcher": "",
-            "symfony/filesystem": "",
-            "symfony/process": ""
-        },
-        "time": "2017-04-04T14:33:42+00:00",
+        "time": "2017-05-01T15:54:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "3.2-dev"
+                "dev-master": "5.4-dev"
             }
         },
         "installation-source": "dist",
         "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Console\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
+            "files": [
+                "lib/swift_required.php"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -702,202 +39,111 @@
             "MIT"
         ],
         "authors": [
+            {
+                "name": "Chris Corbyn"
+            },
             {
                 "name": "Fabien Potencier",
                 "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
             }
         ],
-        "description": "Symfony Console Component",
-        "homepage": "https://symfony.com"
+        "description": "Swiftmailer, free feature-rich PHP mailer",
+        "homepage": "http://swiftmailer.org",
+        "keywords": [
+            "email",
+            "mail",
+            "mailer"
+        ]
     },
     {
-        "name": "seld/phar-utils",
-        "version": "1.0.1",
-        "version_normalized": "1.0.1.0",
+        "name": "phalcon-ext/mailer",
+        "version": "v2.0.3",
+        "version_normalized": "2.0.3.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/Seldaek/phar-utils.git",
-            "reference": "7009b5139491975ef6486545a39f3e6dad5ac30a"
+            "url": "https://github.com/phalcon-ext/mailer.git",
+            "reference": "9e8a21a499e11a513fbb929734224ca2976d7605"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/7009b5139491975ef6486545a39f3e6dad5ac30a",
-            "reference": "7009b5139491975ef6486545a39f3e6dad5ac30a",
+            "url": "https://api.github.com/repos/phalcon-ext/mailer/zipball/9e8a21a499e11a513fbb929734224ca2976d7605",
+            "reference": "9e8a21a499e11a513fbb929734224ca2976d7605",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3"
+            "php": ">=5.4.0",
+            "swiftmailer/swiftmailer": "~5.3"
         },
-        "time": "2015-10-13T18:44:15+00:00",
+        "time": "2015-12-18T08:36:58+00:00",
         "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.x-dev"
-            }
-        },
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
-                "Seld\\PharUtils\\": "src/"
+                "Phalcon\\Ext\\Mailer\\": "src/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "MIT"
+            "LGPL"
         ],
         "authors": [
             {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be"
+                "name": "Stanislav Kiryukhin",
+                "email": "korsar.zn@gmail.com",
+                "role": "Founder and project lead"
             }
         ],
-        "description": "PHAR file format utilities, for when PHP phars you up",
+        "description": "Mailer component as wrapper over SwiftMailer for Phalcon.",
         "keywords": [
-            "phra"
+            "mailer",
+            "phalcon",
+            "phalcon-ext",
+            "phalcon-mailer"
         ]
     },
     {
-        "name": "seld/jsonlint",
-        "version": "1.6.0",
-        "version_normalized": "1.6.0.0",
+        "name": "phalcon/incubator",
+        "version": "v3.1.1",
+        "version_normalized": "3.1.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/Seldaek/jsonlint.git",
-            "reference": "791f8c594f300d246cdf01c6b3e1e19611e301d8"
+            "url": "https://github.com/phalcon/incubator.git",
+            "reference": "3f39a270e47e162a3e06140a337be6acc07aa6a4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/791f8c594f300d246cdf01c6b3e1e19611e301d8",
-            "reference": "791f8c594f300d246cdf01c6b3e1e19611e301d8",
+            "url": "https://api.github.com/repos/phalcon/incubator/zipball/3f39a270e47e162a3e06140a337be6acc07aa6a4",
+            "reference": "3f39a270e47e162a3e06140a337be6acc07aa6a4",
             "shasum": ""
         },
         "require": {
-            "php": "^5.3 || ^7.0"
+            "ext-phalcon": "^3.1",
+            "php": ">=5.5",
+            "swiftmailer/swiftmailer": "~5.2"
         },
         "require-dev": {
-            "phpunit/phpunit": "^4.5"
+            "codeception/aerospike-module": "^1.0",
+            "codeception/codeception": "^2.2",
+            "codeception/mockery-module": "^0.2",
+            "codeception/specify": "^0.4",
+            "codeception/verify": "^0.3",
+            "phalcongelist/dd": "^1.0",
+            "phpdocumentor/reflection-docblock": "2.0.4",
+            "phpunit/phpunit": "^4.8",
+            "squizlabs/php_codesniffer": "^2.8",
+            "vlucas/phpdotenv": "^2.4"
         },
-        "time": "2017-03-06T16:42:24+00:00",
-        "bin": [
-            "bin/jsonlint"
-        ],
+        "suggest": {
+            "duncan3dc/fork-helper": "To use extended class to access the beanstalk queue service",
+            "ext-aerospike": "*",
+            "sergeyklay/aerospike-php-stubs": "The most complete Aerospike PHP stubs which allows autocomplete in modern IDEs"
+        },
+        "time": "2017-03-28T20:49:59+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
-                "Seld\\JsonLint\\": "src/Seld/JsonLint/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be"
-            }
-        ],
-        "description": "JSON Linter",
-        "keywords": [
-            "json",
-            "linter",
-            "parser",
-            "validator"
-        ]
-    },
-    {
-        "name": "seld/cli-prompt",
-        "version": "1.0.3",
-        "version_normalized": "1.0.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Seldaek/cli-prompt.git",
-            "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
-            "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3"
-        },
-        "time": "2017-03-18T11:32:45+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Seld\\CliPrompt\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be"
-            }
-        ],
-        "description": "Allows you to prompt for user input on the command line, and optionally hide the characters they type",
-        "keywords": [
-            "cli",
-            "console",
-            "hidden",
-            "input",
-            "prompt"
-        ]
-    },
-    {
-        "name": "justinrainbow/json-schema",
-        "version": "1.6.1",
-        "version_normalized": "1.6.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/justinrainbow/json-schema.git",
-            "reference": "cc84765fb7317f6b07bd8ac78364747f95b86341"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/cc84765fb7317f6b07bd8ac78364747f95b86341",
-            "reference": "cc84765fb7317f6b07bd8ac78364747f95b86341",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.29"
-        },
-        "require-dev": {
-            "json-schema/json-schema-test-suite": "1.1.0",
-            "phpdocumentor/phpdocumentor": "~2",
-            "phpunit/phpunit": "~3.7"
-        },
-        "time": "2016-01-25T15:43:01+00:00",
-        "bin": [
-            "bin/validate-json"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.6.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "JsonSchema\\": "src/JsonSchema/"
+                "Phalcon\\": "Library/Phalcon/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -906,208 +152,54 @@
         ],
         "authors": [
             {
-                "name": "Bruno Prieto Reis",
-                "email": "bruno.p.reis@gmail.com"
+                "name": "Phalcon Team",
+                "email": "team@phalconphp.com",
+                "homepage": "https://phalconphp.com/en/team"
             },
             {
-                "name": "Justin Rainbow",
-                "email": "justin.rainbow@gmail.com"
-            },
-            {
-                "name": "Igor Wiedler",
-                "email": "igor@wiedler.ch"
-            },
-            {
-                "name": "Robert Schönthal",
-                "email": "seroscho@googlemail.com"
+                "name": "Contributors",
+                "homepage": "https://github.com/phalcon/incubator/graphs/contributors"
             }
         ],
-        "description": "A library to validate a json schema.",
-        "homepage": "https://github.com/justinrainbow/json-schema",
+        "description": "Adapters, prototypes or functionality that can be potentially incorporated to the C-framework.",
+        "homepage": "https://phalconphp.com",
         "keywords": [
-            "json",
-            "schema"
+            "framework",
+            "incubator",
+            "phalcon"
         ]
     },
     {
-        "name": "composer/spdx-licenses",
-        "version": "1.1.6",
-        "version_normalized": "1.1.6.0",
+        "name": "setasign/fpdi",
+        "version": "1.6.2",
+        "version_normalized": "1.6.2.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/composer/spdx-licenses.git",
-            "reference": "2603a0d7ddc00a015deb576fa5297ca43dee6b1c"
+            "url": "https://github.com/Setasign/FPDI.git",
+            "reference": "a6ad58897a6d97cc2d2cd2adaeda343b25a368ea"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/2603a0d7ddc00a015deb576fa5297ca43dee6b1c",
-            "reference": "2603a0d7ddc00a015deb576fa5297ca43dee6b1c",
+            "url": "https://api.github.com/repos/Setasign/FPDI/zipball/a6ad58897a6d97cc2d2cd2adaeda343b25a368ea",
+            "reference": "a6ad58897a6d97cc2d2cd2adaeda343b25a368ea",
             "shasum": ""
-        },
-        "require": {
-            "php": "^5.3.2 || ^7.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^4.5 || ^5.0.5",
-            "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
-        },
-        "time": "2017-04-03T19:08:52+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Composer\\Spdx\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Nils Adermann",
-                "email": "naderman@naderman.de",
-                "homepage": "http://www.naderman.de"
-            },
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be"
-            },
-            {
-                "name": "Rob Bast",
-                "email": "rob.bast@gmail.com",
-                "homepage": "http://robbast.nl"
-            }
-        ],
-        "description": "SPDX licenses list and validation library.",
-        "keywords": [
-            "license",
-            "spdx",
-            "validator"
-        ]
-    },
-    {
-        "name": "composer/semver",
-        "version": "1.4.2",
-        "version_normalized": "1.4.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/composer/semver.git",
-            "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
-            "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.3.2 || ^7.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^4.5 || ^5.0.5",
-            "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
-        },
-        "time": "2016-08-30T16:08:34+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Composer\\Semver\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Nils Adermann",
-                "email": "naderman@naderman.de",
-                "homepage": "http://www.naderman.de"
-            },
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be"
-            },
-            {
-                "name": "Rob Bast",
-                "email": "rob.bast@gmail.com",
-                "homepage": "http://robbast.nl"
-            }
-        ],
-        "description": "Semver library that offers utilities, version constraint parsing and validation.",
-        "keywords": [
-            "semantic",
-            "semver",
-            "validation",
-            "versioning"
-        ]
-    },
-    {
-        "name": "composer/composer",
-        "version": "1.0.3",
-        "version_normalized": "1.0.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/composer/composer.git",
-            "reference": "a4a0546ece469cae984219f920c75437820064ff"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/composer/composer/zipball/a4a0546ece469cae984219f920c75437820064ff",
-            "reference": "a4a0546ece469cae984219f920c75437820064ff",
-            "shasum": ""
-        },
-        "require": {
-            "composer/semver": "^1.0",
-            "composer/spdx-licenses": "^1.0",
-            "justinrainbow/json-schema": "^1.6",
-            "php": "^5.3.2 || ^7.0",
-            "seld/cli-prompt": "^1.0",
-            "seld/jsonlint": "^1.4",
-            "seld/phar-utils": "^1.0",
-            "symfony/console": "^2.5 || ^3.0",
-            "symfony/filesystem": "^2.5 || ^3.0",
-            "symfony/finder": "^2.2 || ^3.0",
-            "symfony/process": "^2.1 || ^3.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^4.5 || ^5.0.5",
-            "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
         },
         "suggest": {
-            "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
-            "ext-zip": "Enabling the zip extension allows you to unzip archives",
-            "ext-zlib": "Allow gzip compression of HTTP requests"
+            "setasign/fpdf": "FPDI will extend this class but as it is also possible to use \"tecnickcom/tcpdf\" as an alternative there's no fixed dependency configured.",
+            "setasign/fpdi-fpdf": "Use this package to automatically evaluate dependencies to FPDF.",
+            "setasign/fpdi-tcpdf": "Use this package to automatically evaluate dependencies to TCPDF."
         },
-        "time": "2016-04-29T15:30:16+00:00",
-        "bin": [
-            "bin/composer"
-        ],
+        "time": "2017-05-11T14:25:49+00:00",
         "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            }
-        },
         "installation-source": "dist",
         "autoload": {
-            "psr-4": {
-                "Composer\\": "src/Composer"
-            }
+            "classmap": [
+                "filters/",
+                "fpdi.php",
+                "fpdf_tpl.php",
+                "fpdi_pdf_parser.php",
+                "pdf_context.php"
+            ]
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -1115,22 +207,271 @@
         ],
         "authors": [
             {
-                "name": "Nils Adermann",
-                "email": "naderman@naderman.de",
-                "homepage": "http://www.naderman.de"
-            },
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be"
+                "name": "Jan Slabon",
+                "email": "jan.slabon@setasign.com",
+                "homepage": "https://www.setasign.com"
             }
         ],
-        "description": "Composer helps you declare, manage and install dependencies of PHP projects, ensuring you have the right stack everywhere.",
-        "homepage": "https://getcomposer.org/",
+        "description": "FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in FPDF. Because it is also possible to use FPDI with TCPDF, there are no fixed dependencies defined. Please see suggestions for packages which evaluates the dependencies automatically.",
+        "homepage": "https://www.setasign.com/fpdi",
         "keywords": [
-            "autoload",
-            "dependency",
-            "package"
+            "fpdf",
+            "fpdi",
+            "pdf"
+        ]
+    },
+    {
+        "name": "mpdf/mpdf",
+        "version": "v6.1.3",
+        "version_normalized": "6.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mpdf/mpdf.git",
+            "reference": "7f138bf7508eac895ac2c13d2509b056ac7e7e97"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mpdf/mpdf/zipball/7f138bf7508eac895ac2c13d2509b056ac7e7e97",
+            "reference": "7f138bf7508eac895ac2c13d2509b056ac7e7e97",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "php": ">=5.4.0",
+            "setasign/fpdi": "1.6.*"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.7"
+        },
+        "suggest": {
+            "ext-zlib": "Needed for compression of embedded resources, such as fonts"
+        },
+        "time": "2016-12-12T10:42:18+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "mpdf.php",
+                "classes"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Ian Back",
+                "role": "Developer"
+            }
+        ],
+        "description": "A PHP class to generate PDF files from HTML with Unicode/UTF-8 and CJK support",
+        "homepage": "http://mpdf.github.io",
+        "keywords": [
+            "pdf",
+            "php",
+            "utf-8"
+        ]
+    },
+    {
+        "name": "setasign/fpdf",
+        "version": "1.8.1",
+        "version_normalized": "1.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Setasign/FPDF.git",
+            "reference": "2c68c9e6c034ac3187d25968790139a73184cdb1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Setasign/FPDF/zipball/2c68c9e6c034ac3187d25968790139a73184cdb1",
+            "reference": "2c68c9e6c034ac3187d25968790139a73184cdb1",
+            "shasum": ""
+        },
+        "time": "2016-01-01T17:47:15+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "fpdf.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "no usage restriction"
+        ],
+        "authors": [
+            {
+                "name": "Olivier Plathey",
+                "email": "oliver@fpdf.org",
+                "homepage": "http://fpdf.org/"
+            }
+        ],
+        "description": "FPDF is a PHP class which allows to generate PDF files with pure PHP. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs.",
+        "homepage": "http://www.fpdf.org",
+        "keywords": [
+            "fpdf",
+            "pdf"
+        ]
+    },
+    {
+        "name": "setasign/fpdi-fpdf",
+        "version": "1.6.2",
+        "version_normalized": "1.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Setasign/FPDI-FPDF.git",
+            "reference": "a5dda72b78253c0e9e4d644e6e3af4b94662e27e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Setasign/FPDI-FPDF/zipball/a5dda72b78253c0e9e4d644e6e3af4b94662e27e",
+            "reference": "a5dda72b78253c0e9e4d644e6e3af4b94662e27e",
+            "shasum": ""
+        },
+        "require": {
+            "setasign/fpdf": "1.8.1",
+            "setasign/fpdi": "1.6.2"
+        },
+        "time": "2017-05-11T14:57:54+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "fpdi_bridge.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jan Slabon",
+                "email": "jan.slabon@setasign.com",
+                "homepage": "https://www.setasign.com"
+            }
+        ],
+        "description": "Kind of metadata package for dependencies of the latest versions of FPDI and FPDF.",
+        "homepage": "https://www.setasign.com/fpdi",
+        "keywords": [
+            "fpdf",
+            "fpdi",
+            "pdf"
+        ]
+    },
+    {
+        "name": "tecnickcom/tcpdf",
+        "version": "6.2.12",
+        "version_normalized": "6.2.12.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tecnickcom/TCPDF.git",
+            "reference": "2f732eaa91b5665274689b1d40b285a7bacdc37f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/2f732eaa91b5665274689b1d40b285a7bacdc37f",
+            "reference": "2f732eaa91b5665274689b1d40b285a7bacdc37f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2015-09-12T10:08:34+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "fonts",
+                "config",
+                "include",
+                "tcpdf.php",
+                "tcpdf_parser.php",
+                "tcpdf_import.php",
+                "tcpdf_barcodes_1d.php",
+                "tcpdf_barcodes_2d.php",
+                "include/tcpdf_colors.php",
+                "include/tcpdf_filters.php",
+                "include/tcpdf_font_data.php",
+                "include/tcpdf_fonts.php",
+                "include/tcpdf_images.php",
+                "include/tcpdf_static.php",
+                "include/barcodes/datamatrix.php",
+                "include/barcodes/pdf417.php",
+                "include/barcodes/qrcode.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPLv3"
+        ],
+        "authors": [
+            {
+                "name": "Nicola Asuni",
+                "email": "info@tecnick.com",
+                "homepage": "http://nicolaasuni.tecnick.com"
+            }
+        ],
+        "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+        "homepage": "http://www.tcpdf.org/",
+        "keywords": [
+            "PDFD32000-2008",
+            "TCPDF",
+            "barcodes",
+            "datamatrix",
+            "pdf",
+            "pdf417",
+            "qrcode"
+        ]
+    },
+    {
+        "name": "setasign/fpdi-tcpdf",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Setasign/FPDI-TCPDF.git",
+            "reference": "50c7c5a03368ba388e72ff45d080c33270b0aef1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Setasign/FPDI-TCPDF/zipball/50c7c5a03368ba388e72ff45d080c33270b0aef1",
+            "reference": "50c7c5a03368ba388e72ff45d080c33270b0aef1",
+            "shasum": ""
+        },
+        "require": {
+            "setasign/fpdi": "1.6.*",
+            "tecnickcom/tcpdf": "6.2.*"
+        },
+        "conflict": {
+            "setasign/fpdf": "1.7.*"
+        },
+        "time": "2015-10-26T08:10:24+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "fpdi_bridge.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jan Slabon",
+                "email": "jan.slabon@setasign.com",
+                "homepage": "https://www.setasign.com"
+            }
+        ],
+        "description": "Kind of metadata package for dependencies of the latest versions of FPDI and TCPDF.",
+        "homepage": "https://www.setasign.com/fpdi",
+        "keywords": [
+            "TCPDF",
+            "fpdi",
+            "pdf"
         ]
     }
 ]

@@ -1,54 +1,26 @@
 {
-    "name": "ovr/phalcon-module-skeleton",
-    "description": "Example for easy start with Phalcon + Phalcony sublib.",
-    "url": "https://github.com/ovr/phalcon-module-skeleton",
-    "license": "MIT",
-    "type": "project",
-    "keywords": [
-        "phalcon",
-        "skeleton",
-        "user",
-        "rest",
-        "api",
-        "oauth"
-    ],
-    "require": {
-        "php": ">=5.4",
-        "ext-json": "*",
-        "ovr/phalcony": "~0.2.4",
-        "phalconeye/framework": "0.5.*@dev",
-        "symfony/console": "*",
-        "socialconnect/auth": "~0.2",
-        "ovr/phalcon-pretty-exceptions": "dev-master"
-    },
-    "require-dev": {
-        "composer/composer": "1.0.*@dev",
-        "squizlabs/php_codesniffer": "~2.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "library/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Patsura Dmitry",
-            "email": "talk@dmtry.me"
-        }
-    ],
-    "scripts": {
-        "post-root-package-install": [
-            "App\\Composer\\ScriptHandler::install"
-        ],
-        "post-install-cmd": [
-            "App\\Composer\\ScriptHandler::build"
-        ],
-        "post-update-cmd": [
-            "App\\Composer\\ScriptHandler::build"
-        ]
-    },
-    "extra": {
-        "app-dir": "application",
-        "web-dir": "public"
-    }
+  "name" : "ovr/phalcon-module-skeleton",
+  "description" : "Example for easy start with Phalcon + Phalcony sublib.",
+  "require" : {
+    "php" : ">=5.5",
+    "ext-phalcon" : ">=3.0.0",
+    "phalcon/incubator" : "~3.0",
+    "mpdf/mpdf" : "^6.1",
+    "setasign/fpdi-fpdf" : "^1.6",
+    "setasign/fpdi-tcpdf" : "^1.6",
+    "swiftmailer/swiftmailer" : "v5.4.8",
+    "phalcon-ext/mailer" : "v2.0.3"
+  },
+  
+  "license" : "BSD-3",
+  "keywords" : [ "phalcon", "framework", "sample app", "vokuro" ],
+  "type" : "library",
+  "homepage" : "http://www.phalconphp.com",
+  "authors" : [ {
+    "name" : "Andres Gutierrez",
+    "email" : "andres@phalconphp.com"
+  }, {
+    "name" : "Mark Garrett",
+    "email" : "mark@moderndeveloperllc.com"
+  } ]
 }
