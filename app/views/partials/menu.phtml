@@ -1,0 +1,34 @@
+<?php 
+ $ident = $this->auth->getIdentity(); 
+if (is_array($ident)) {
+?>
+
+<li class="<?php echo $this->router->getControllerName() == 'dashboard'?  'active' : null;?>">
+	<?php echo $this->tag->linkTo(["dashboard", '<i class="font-green-jungle icon-home"></i> Dashboard', "class" => " font-green-jungle text-uppercase"]); ?>
+</li>
+<li class="<?php echo $this->router->getControllerName() == 'students'?  'active' : null;?>">
+	<?php echo $this->tag->linkTo(["students", '<i class="font-green-jungle icon-users"></i> Students', "class" => "font-green-jungle text-uppercase"]); ?>
+</li>
+
+<li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown <?php echo $this->router->getControllerName() == 'staff'?  'active' : null;?>">
+	<a href="javascript:;" class="text-uppercase font-green-jungle"><i class="font-green-jungle fa fa-gears (alias)"></i> Faculty </a>
+	<ul class="dropdown-menu pull-left">
+		
+		<?php if ($ident['profile'] == 'Administrators'){ ?>
+		<li>
+			<?php echo $this->tag->linkTo(["staff", 'STAFF', "class" => "nav-link text-uppercase"]); ?>
+		</li>
+		<li>
+			<?php echo $this->tag->linkTo(["users", '<i class="font-gold fa fa-users"></i> Users', "class" => "nav-link text-uppercase"]); ?>
+		</li>
+		<li>
+			<?php echo $this->tag->linkTo(["profiles", '<i class="font-gold fa fa-users"></i> Profiles', "class" => "nav-link text-uppercase"]); ?>
+		</li>
+		<li>
+			<?php echo $this->tag->linkTo(["permissions", '<i class="font-gold fa fa-users"></i> Permissions', "class" => "nav-link text-uppercase"]); ?>
+		</li>
+		<?php }?>
+	</ul>
+</li>
+
+<?php }?>

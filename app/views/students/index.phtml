@@ -1,0 +1,46 @@
+<?php use App\Models\Mongo\Students_m;
+
+ echo $this->getContent();?>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light ">
+			<div class="portlet-title">
+            	<div class="caption bold font-blue-soft uppercase">Students List</div>
+            	<div class="actions">
+            		
+            	</div>
+      		</div>
+      		<div class="portlet-body">
+      			<table class="table table-bordered table-striped table-condensed table-light" id="sample_3">
+					<thead>
+						<tr class="uppercase">							
+							<th>mic</th>
+							<th>Full Name</th>
+                          	<th>gender</th>
+                        	<th>Birthdate</th>
+                        	
+                          	<th><span class="pull-right">Action</span></th>
+                  		</tr>
+            		</thead>
+            		<tbody>
+                		<?php
+                		   if (!empty($students)):
+                		   foreach ($students as $key):
+                		   if (empty($key->leaving_date)):
+                		?>
+                		<tr>			
+                			<td><?php echo isset($key->mic_number) ? $key->mic_number : null;?></td>
+                			<td><?php echo $key->full_name ? $key->full_name : null;?></td>
+                			<td><?php echo $key->gender ? $key->gender : null;?></td>
+                			<td><?php echo $key->birthdate ? Students_m::Displaydate($key->birthdate): null;?></td>
+                			<td class="pull-right">                				
+                			</td>			
+                		</tr>
+                		<?php endif; endforeach; endif;?>
+                	</tbody>              		
+             	</table>
+      		</div>
+		</div>
+	</div>
+</div>

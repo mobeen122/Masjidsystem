@@ -1,0 +1,80 @@
+<body class="page-container-bg-solid page-md page-header-menu-fixed">
+	<div class="page-wrapper">
+		<div class="page-wrapper-row">
+			<div class="page-wrapper-top">
+				<div class="page-header">
+					<div class="page-header-top">
+						<div class="container">
+							<div class="page-logo">
+								<a href="/dashboard">
+									<img src="/images/madinaloginlogo.svg" alt="logo" class="page-logo" />
+								</a>
+							</div>
+							<a href="javascript:;" class="menu-toggler"></a>
+							<div class="top-menu">
+								<ul class="nav navbar-nav pull-right">
+									<li class="dropdown dropdown-user username-hide-mobile">
+										<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                                <img alt="" class="img-circle" src="/assets/layouts/layout3/img/avatar.png"><span class="username username-hide-mobile"><?php echo $this->auth->getUser() ? $this->auth->getName(): 'Welcome'; ?></span>
+                                    	</a>
+                                  		<ul class="dropdown-menu dropdown-menu-default">
+                                  			<?php if ($this->auth->getUser()):?>
+                                      		<li><a href="/users"><i class="icon-user"></i> My Profile </a></li>
+                                   			<li><a href="/session/logout"><i class="fa fa-power-off font-red"></i> Logout </a></li>
+                                   			<?php else:?>
+                                   				<li><a href="/"><i class="fa fa-power-off font-red"></i> Login </a></li>
+                                   			<?php endif;?>                                   			
+                                     	</ul>
+                                	</li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="page-header-menu">
+						<div class="container">
+							<div class="hor-menu  ">
+								<ul class="nav navbar-nav">
+                             		<?php $this->partial("partials/menu"); ?>
+                              	</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-wrapper-row full-height">
+			<div class="page-wrapper-middle">
+				<div class="page-container">
+					<div class="page-content-wrapper">
+						<div class="page-head">
+							<div class="container">
+								<div class="page-title uppercase">
+									<h1><?php echo isset($pagetitle)? $pagetitle: null;  ?>
+										::: <small>  <?php echo isset($pagedetails)? $pagedetails : null;  ?> </small>
+									</h1>
+								</div>
+							</div>
+						</div>
+						<div class="page-content">
+							<div class="container">
+								<div class="page-content-inner uppercase">
+                                   <?php echo $this->getContent(); ?>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-wrapper-row">
+			<div class="page-wrapper-bottom">
+				<div class="page-footer">
+					<div class="container">  &copy; <?php echo date('Y'); ?> <?php echo $this->config->application->company;?>
+                        </div>
+				</div>
+				<div class="scroll-to-top hidden-print">
+					<i class="icon-arrow-up"></i>
+				</div>
+			</div>
+		</div>
+	</div>

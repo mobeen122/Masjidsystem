@@ -1,0 +1,43 @@
+<?php echo $this->getContent(); ?>
+<div class="row">
+	<div class="col-md-6">
+		<div class="portlet light ">
+			<div class="portlet-title">
+				<div class="caption">Create User</div>
+				<div class="tools">
+					<div class="btn-group btn-group-devided">
+						<?php echo $this->tag->linkTo(["users", "&larr; Go Back", "class" => "btn btn-transparent"]); ?>
+					</div>
+				</div>
+			</div>
+			<div class="portlet-body form">
+				<form method="post" class="form-horizontal" autocomplete="off">
+					<?php echo $form->render('csrf');?>
+					<div class="form-body">
+						<div class="form-group">
+							<label for="id" class="control-label col-md-3">Name</label>
+							<div class="col-md-9"><?php echo $form->render('name');?></div>
+						</div>
+						<div class="form-group">
+							<label for="id" class="control-label col-md-3">E-Mail</label>
+							<div class="col-md-9"><?php echo $form->render('email');?></div>
+						</div>
+						<div class="form-group">
+							<label for="id" class="control-label col-md-3">Username</label>
+							<div class="col-md-9"><?php echo $form->render('username');?></div>
+						</div>
+						<div class="form-group">
+							<label for="id" class="control-label col-md-3">Department</label>
+							<div class="col-md-9"><?php echo $form->render('profile_id');?></div>
+						</div>
+						<div class="form-group">
+							<label for="id" class="control-label col-md-3"></label>
+							<div class="col-md-9"><?php echo $form->render('submit');?></div>
+						</div>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
