@@ -125,13 +125,13 @@ class IndexController extends Controller
                                 'name' => $user->name,
                                 'profile' => $user->profile->name
                             ]);
-                            
-                            return $this->dispatcher->forward(
+                            return $this->response->redirect('dashboard');
+                            /* return $this->dispatcher->forward(
                                 [
                                     "controller" => "dashboard",
                                     "action"     => "index",
                                 ]
-                            );
+                            ); */
                             
                         }
                         else {

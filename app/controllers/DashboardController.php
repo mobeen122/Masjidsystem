@@ -2,7 +2,7 @@
 namespace App\Controllers;
 
 
-use App\Models\Mongo\Student_fm;
+//use App\Models\Mongo\Student_fm;
 
 /**
  * Display the default index page.
@@ -40,9 +40,10 @@ class DashboardController extends ControllerBase
         //$agent = [$this->request->getUserAgent(), $this->request->getClientAddress()];
         
         //$student = Students_m::find(['limit' => 5]);
-        $students = Student_fm::find();
+        //$students = Student_fm::find();
         
         $this->view->students = [];
+        $this->view->pagedetails    = 'Member Area';
     }
     
     public function convertAction()
